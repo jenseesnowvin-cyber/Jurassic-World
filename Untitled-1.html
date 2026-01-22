@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurassic World - Dinosaurs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #3cb371;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #2e8b57;
+        }
+        .dino-card {
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #e0f7fa;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        }
+        .dino-card img {
+            width: 200px;
+            height: auto;
+            border-radius: 12px;
+        }
+        .dino-card h3 {
+            margin-top: 0;
+        }
+        .dino-info {
+            flex: 1;
+        }
+        /* Hover Effects */
+        .dino-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            background-color: #b2ebf2;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jurassic World</h1>
+        <p>Discover the Dinosaurs of the Park!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About the Park</a>
+        <a href="#dinosaurs">Dinosaurs</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Jurassic World</h2>
+        <p>Jurassic World is a dinosaur theme park on Isla Nublar. 
+        It brings genetically engineered dinosaurs back to life for visitors to experience.</p>
+    </section>
+
+    <section id="dinosaurs">
+        <h2>Dinosaurs in Jurassic World</h2>
+
+        <!-- Existing dinosaurs -->
+        <div class="dino-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Rexy-_the_Jurassic_Park_Tyrannosaurus_rex.png" alt="Tyrannosaurus Rex">
+            <div class="dino-info">
+                <h3>Tyrannosaurus Rex (T-Rex)</h3>
+                <p>The T-Rex is a massive carnivorous dinosaur, known for its enormous size and sharp teeth. It's one of the park's main attractions.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://static.wikia.nocookie.net/fictionalcharacters/images/6/69/Jurassic_Park_27Blue%25_27_Render.webp/revision/latest/scale-to-width-down/339?cb=20240707145357" alt="Velociraptor">
+            <div class="dino-info">
+                <h3>Velociraptor</h3>
+                <p>Small but deadly, Velociraptors are extremely intelligent and fast predators. They are often seen hunting in packs.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://static.wikia.nocookie.net/jurassicpark/images/9/96/Indominus_Rex_New.png/revision/latest/scale-to-width-down/1200?cb=20250701022405" alt="Indominus Rex">
+            <div class="dino-info">
+                <h3>Indominus Rex</h3>
+                <p>A genetically modified hybrid dinosaur created to be bigger and stronger than any other. It is highly aggressive and dangerous.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://static.wikia.nocookie.net/jurassicpark/images/5/52/Jurassic_world_fallen_kingdom_triceratops_by_sonichedgehog2-dc9dwcu.png/revision/latest?cb=20180427200649" alt="Triceratops">
+            <div class="dino-info">
+                <h3>Triceratops</h3>
+                <p>A large herbivorous dinosaur with three horns and a frill. Gentle in nature, it is a favorite among visitors.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://static.wikia.nocookie.net/jurassicpark/images/8/8f/Jurassic_world_fallen_kingdom_stegosaurus_v4_by_sonichedgehog2-dco06sh.png/revision/latest/scale-to-width/360?cb=20180928221819" alt="Stegosaurus">
+            <div class="dino-info">
+                <h3>Stegosaurus</h3>
+                <p>A slow-moving herbivore known for its bony plates along its back and spiked tail, used for defense.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://static.wikia.nocookie.net/jurassicpark/images/1/1a/Pteranodon_render.png/revision/latest/scale-to-width-down/1200?cb=20180723084903" alt="Pteranodon">
+            <div class="dino-info">
+                <h3>Pteranodon</h3>
+                <p>A flying reptile that soars above the park. Visitors can see it glide gracefully through the sky.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://static.wikia.nocookie.net/jurassicworld-evolution/images/1/19/BrachiosaurusJWE.webp/revision/latest/scale-to-width/360?cb=20230210214109&path-prefix=fr" alt="Brachiosaurus">
+            <div class="dino-info">
+                <h3>Brachiosaurus</h3>
+                <p>A gigantic herbivorous dinosaur with a long neck, allowing it to reach tall trees for food. Peaceful and gentle in nature.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiIyMDIxLTExL3NwaW5vc2F1cnVzXzI3ODQxNC5wbmciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjg1fSwidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7ImZpdCI6ImNvbnRhaW4ifX19" alt="Spinosaurus">
+            <div class="dino-info">
+                <h3>Spinosaurus</h3>
+                <p>A massive predator that spends time on land and in water. Known for the sail-like fin on its back and powerful jaws.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bae58b19-3adb-45a5-a03c-2a2830f73337/dixseea-a5819541-864d-40fd-bf19-8c658da740e2.png/v1/fill/w_1233,h_648/jurassic_world_ankylosaurus_bumpy_render_png_by_junior3dsymas_dixseea-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjczIiwicGF0aCI6Ii9mL2JhZTU4YjE5LTNhZGItNDVhNS1hMDNjLTJhMjgzMGY3MzMzNy9kaXhzZWVhLWE1ODE5NTQxLTg2NGQtNDBmZC1iZjE5LThjNjU4ZGE3NDBlMi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.DDksTwPdvkiC-K1xRWnfyPAliHVXjgBy9TCVJsUw7QY" alt="Ankylosaurus">
+            <div class="dino-info">
+                <h3>Ankylosaurus</h3>
+                <p>Heavily armored herbivore with a clubbed tail for defense. Slow but very difficult to attack.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://static.wikia.nocookie.net/jurassicpark/images/d/d1/JWD_Parasaurolophus.png/revision/latest?cb=20220618082154" alt="Parasaurolophus">
+            <div class="dino-info">
+                <h3>Parasaurolophus</h3>
+                <p>A herbivorous dinosaur known for its long, curved crest used to make loud sounds. Social and usually seen in herds.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://static.wikia.nocookie.net/jurassicpark/images/b/bb/AlloRenderDominion.png/revision/latest?cb=20240817200513" alt="Allosaurus">
+            <div class="dino-info">
+                <h3>Allosaurus</h3>
+                <p>A large carnivorous dinosaur that is fast and agile, often hunting medium-sized prey in packs.</p>
+            </div>
+        </div>
+
+        <div class="dino-card">
+            <img src="https://static.wikia.nocookie.net/jurassicpark/images/9/9f/071cbb66abeb01ef8ae15464cfecf224.png/revision/latest/scale-to-width/360?cb=20180709071807" alt="Compsognathus">
+            <div class="dino-info">
+                <h3>Compsognathus</h3>
+                <p>Small, fast, and agile carnivore. Often depicted in groups and known for hunting insects and small animals.</p>
+            </div>
+        </div>
+
+<div class="dino-card">
+    <img src="https://static.wikia.nocookie.net/jurassicpark/images/8/8d/Mosasaurus_%282%29.png/revision/latest/scale-to-width/360?cb=20190622142157" alt="Mosasaur">
+    <div class="dino-info">
+        <h3>Mosasaur</h3>
+        <p>A massive marine reptile that swims in the park’s lagoon. Fierce predator of the water and one of the largest creatures in Jurassic World.</p>
+    </div>
+</div>
+
+
+<div class="dino-card">
+    <img src="https://static.wikia.nocookie.net/jpfanon/images/0/04/Jurassic_world_fallen_kingdom_baryonyx_by_sonichedgehog2-dc9dfqf.png/revision/latest?cb=20200718223237" alt="Baryonyx">
+    <div class="dino-info">
+        <h3>Baryonyx</h3>
+        <p>A semi-aquatic predator with a long snout for catching fish. Known for its sharp claws and agility in both water and land.</p>
+    </div>
+</div>
+
+    </section>
+
+</body>
+</html>
